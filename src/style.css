@@ -9,25 +9,60 @@ a {
 }
 
 .weather-app {
-    background: white;
-    padding: 50px 150px 50px 150px;
+    padding: 50px 80px 50px 80px;
     border-radius: 20px;
     max-width: 600px;
-    margin: 100px auto;
+    margin: 105px auto;
     border: 3px solid rgba(8, 3, 3, 0.1);
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.weather-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../Background/Sunny.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    border-radius: 20px;
+
+}
+
+h1 {
+    position: relative;
+}
+
+img {
+    position: relative;
+}
+
+p {
+    position: relative;
 }
 
 header {
     border-bottom: 1px solid #f9f7fe;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    position: relative;
 }
 
 .search-form-input {
-    width: 60%;
-    padding: 15px 20px;
+    width: 800%;
+    padding: 10px 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
     background-color: #f9f7fe;
     font-family: 'Crafty Girls', cursive;
@@ -44,6 +79,7 @@ header {
     margin-left: 20px;
     font-family: 'Crafty Girls', cursive;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 main {
@@ -56,10 +92,42 @@ main {
 }
 
 .weather-app-city {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
-    margin-bottom: 10px;
+    line-height: 48px;
+    margin: 0;
+}
 
+.weather-app-details {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 5px 0;
+    color: #797979;
+    font-weight: 600;
+}
+
+.weather-app-details strong {
+    position: relative;
+    color: #f74cc3;
+}
+
+.weather-app-temperature-container {
+    display: flex;
+}
+
+.weather-app-temperature {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.weather-app-unit {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.weather-app-icon {
+    display: flex;
+    margin-top: 10px;
 }
 
 footer {
@@ -67,6 +135,6 @@ footer {
     padding: 20px 0 0 0;
     text-align: center;
     font-size: 13px;
-    color: #b8b8b8;
+    color: #7c7a7a;
     font-weight: 600;
 }
