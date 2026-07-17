@@ -10,17 +10,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="weather-app">
+        <div class="weather-app" id="weather-app">
         <header>
-            <form class="search-form">
-                <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
                 <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
             <div class="weather-app-data">
                 <div>
-                    <h1 class="weather-app-city">Fontana</h1>
+                    <h1 class="weather-app-city" id="city">Fontana</h1>
                     <p class="weather-app-details">
                         Thursday 15:16, Sunny
                         <br />
@@ -29,7 +29,7 @@
                 </div>
                 <div class="weather-app-temperature-container">
                     <div class="weather-app-icon">
-                        <img src="icons/sunny.gif" alt="Sunny" width="60" height="60"/>
+                        <img src="icons/sunny.gif" alt="Sunny" width="60" height="60" id="weather-icon"/>
                     </div>
                     <div class="weather-app-temperature">98</div>
                     <div class="weather-app-unit"> °F</div>
@@ -42,5 +42,6 @@
             <a href="https://weatherproject-z.netlify.app" target="_blank">Netlify</a>.
         </footer>
         </div>
+        <script src="src/index.js"></script>
     </body>
 </html>
