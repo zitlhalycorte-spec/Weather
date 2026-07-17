@@ -12,22 +12,23 @@
     <body>
         <div class="weather-app">
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city..." required />
-                <input type="submit" value="Search" />
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <div>
-                <h1>Fontana</h1>
-                <p>
-                    Thursday 15:16, Sunny
-                    <br />
-                    Humidity: 5%, Wind: 2 km/h
-                </p>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city">Fontana</h1>
+                    <p>
+                        Thursday 15:16, Sunny
+                        <br />
+                        Humidity: 5%, Wind: 2 km/h
+                    </p>
+                </div>
+                <div><img src="icons/sunny.gif" alt="Sunny" width="50" height="50" /> 98°F</div>
             </div>
-            <div>
-                <img src="icons/sunny.gif" alt="Sunny" width="50" height="50" /> 98°F</div>
         </main>
         <footer>
             This project is coded by <a href="https://github.com/zitlhalycorte-spec" target="_blank">Zitlhaly Corte</a> and is on
