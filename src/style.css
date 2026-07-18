@@ -16,22 +16,13 @@ a {
     border: 3px solid rgba(8, 3, 3, 0.1);
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
     position: relative;
-}
-
-.weather-app::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("../Background/Sunny.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.2;
-    border-radius: 20px;
+    background-color: rgba(163, 161, 161, 0.9);
+    background-blend-mode: multiply;
 }
+
 
 h1 {
     position: relative;
@@ -95,13 +86,14 @@ main {
     font-weight: 600;
     line-height: 48px;
     margin: 0;
+    color: #f1d1e5;
 }
 
 .weather-app-details {
     font-size: 20px;
     line-height: 28px;
     margin: 5px 0;
-    color: #797979;
+    color: #f1d1e5;
     font-weight: 600;
 }
 
@@ -117,11 +109,13 @@ main {
 .weather-app-temperature {
     font-size: 50px;
     font-weight: bold;
+    color: #f1d1e5;
 }
 
 .weather-app-unit {
     font-size: 30px;
     margin-top: 10px;
+    color: #f1d1e5;
 }
 
 .weather-app-icon {
@@ -134,6 +128,6 @@ footer {
     padding: 20px 0 0 0;
     text-align: center;
     font-size: 13px;
-    color: #7c7a7a;
+    color: #f1d1e5;
     font-weight: 600;
 }
