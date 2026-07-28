@@ -86,8 +86,6 @@ function displayForecast(response) {
 }
 
 
-
-
 function getCityTime(timezoneName) {
   return new Intl.DateTimeFormat('en-US', {
     timeStyle: 'medium',
